@@ -111,7 +111,10 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
 </svelte:head>
-<h2 class="font-bold text-xl">IMPORTANT NOTE: Your SHA1 hashed IP is stored on the server in memory temporarily if you run code here. If you flood more than 9 requests per minute continuously, your SHA1 hashed IP address may be added to a configuration file permanently. If you have any enquiries, please contact either @god286 on Scratch or @webdev03 on GitHub. By running code using the code running tool on this page, you agree that your SHA1 hashed IP may be stored temporarily.</h2>
+<h2 class="font-bold text-xl">IMPORTANT NOTE: Your SHA1 hashed IP is stored on the server in memory temporarily if you run code here. 
+  If you flood more than 9 requests per minute continuously, your SHA1 hashed IP address may be added to a configuration file permanently. 
+  If you have any enquiries, please contact either @DifferentDance8 on Scratch or @UniqueName12345 on GitHub. 
+  By running code using the code running tool on this page, you agree that your SHA1 hashed IP may be stored temporarily.</h2>
 {#if loading}
   <Loading />
 {:else}
@@ -124,8 +127,8 @@
     class="mt-4 mb-4 bg-sky-500 w-full hover:bg-sky-600 transition p-3 text-white rounded pl-6 pr-6"
     >Run</button
   >
-  <h3 class="text-xl font-semibold mb-2">STDOUT</h3>
+  <h3 class="text-xl font-semibold mb-2">Output</h3>
   <textarea id="stdoutEditor" />
-  <h3 class="text-xl font-semibold mt-2 mb-2">STDERR</h3>
+  <h3 class="text-xl font-semibold mt-2 mb-2">Errors</h3>
   <textarea id="stderrEditor" />
 {/if}
