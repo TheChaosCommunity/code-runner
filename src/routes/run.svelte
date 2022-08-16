@@ -34,7 +34,7 @@
       runBtn.addEventListener("click", async () => {
         bakeToast({ type: "info", title: "Running", body: "Sending your code to be run..." });
         try {
-          const fetchReq = await fetch("https://coderuntest.god286.repl.co/run", {
+          const fetchReq = await fetch("http://coderunnerinternal.smurfsomeone.repl.co/run/", {
             method: "POST",
             body: JSON.stringify({
               input: inputEditor.getValue(),
